@@ -57,7 +57,7 @@ gulp.task('jekyll:doctor', done => {
 // 'gulp styles --prod' -- creates a CSS file from your SASS, adds prefixes and
 // then minifies, gzips and cache busts it. Does not create a Sourcemap
 gulp.task('styles', () =>
-  gulp.src('src/assets/scss/style.scss')
+  gulp.src('src/assets/scss/*.scss')
     .pipe($.if(!argv.prod, $.sourcemaps.init()))
     .pipe($.sass({
       precision: 10
@@ -96,8 +96,11 @@ gulp.task('scripts', () =>
   // NOTE: The order here is important since it's concatenated in order from
   // top to bottom, so you want vendor scripts etc on top
   gulp.src([
-    'src/assets/javascript/vendor.js',
-    'src/assets/javascript/main.js'
+    'src/assets/javascript/js/bootstrap.js',
+    'src/assets/javascript/js/owl.carousel.js',
+    'src/assets/javascript/js/jquery.magnific-popup.js',
+    'src/assets/javascript/js/gmap3.js',
+    'src/assets/javascript/js/custom.js'
   ])
     .pipe($.newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
     .pipe($.if(!argv.prod, $.sourcemaps.init()))
