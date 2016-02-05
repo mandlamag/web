@@ -88,9 +88,9 @@ gulp.task('styles', () =>
     .pipe($.if(!argv.prod, browserSync.stream()))
 );
 
-// 'gulp scripts' -- creates a index.js file from your JavaScript files and
+// 'gulp scripts' -- creates a all.min.js file from your JavaScript files and
 // creates a Sourcemap for it
-// 'gulp scripts --prod' -- creates a index.js file from your JavaScript files,
+// 'gulp scripts --prod' -- creates a all.min.js file from your JavaScript files,
 // minifies, gzips and cache busts it. Does not create a Sourcemap
 gulp.task('scripts', () =>
   // NOTE: The order here is important since it's concatenated in order from
@@ -102,9 +102,9 @@ gulp.task('scripts', () =>
     'src/assets/javascript/js/gmap3.js',
     'src/assets/javascript/js/custom.js'
   ])
-    .pipe($.newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
+    .pipe($.newer('.tmp/assets/javascript/all.min.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
     .pipe($.if(!argv.prod, $.sourcemaps.init()))
-    .pipe($.concat('index.js'))
+    .pipe($.concat('all.min.js'))
     .pipe($.size({
       title: 'scripts',
       showFiles: true
@@ -136,7 +136,7 @@ gulp.task('inject:head', () =>
     .pipe(gulp.dest('src/_includes'))
 );
 
-// 'gulp inject:footer' -- injects our index.js file into the end of our HTML
+// 'gulp inject:footer' -- injects our all.min.js file into the end of our HTML
 gulp.task('inject:footer', () =>
   gulp.src('src/_layouts/default.html')
     .pipe($.inject(gulp.src('.tmp/assets/javascript/*.js',
