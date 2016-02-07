@@ -16,7 +16,7 @@ layout: default
     <div class="container-fluid">
         
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
-            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
+            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Talk to us</h3>
             <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
                 <div class="form-field">
                     <input name="name" type="text" placeholder="Name" required>
@@ -51,20 +51,12 @@ layout: default
     </div>
     <div class="col-sm-4">
         <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-        <h3>Opening Hours</h3>
+        <h3>Hours</h3>
         <table>
             <tbody>
                 <tr>
-                    <td>Monday – Friday</td>
-                    <td>{{ site.monday_friday }}</td>
-                </tr>
-                <tr>
                     <td>Saturday</td>
                     <td>{{ site.saturday }}</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>{{ site.sunday }}</td>
                 </tr>
             </tbody>
         </table>
@@ -86,8 +78,8 @@ layout: default
 
         <div class="row">
             <div class="col-sm-6">
-                <h3>Welcome to DentistSmile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
+                <h3>Welcome to SisonkeRising</h3>
+                <p>We are a community outreach program that focuses on inspiring, influening and taking youth on a journey from novice to craftmanship in the area of software development and general lessons that put them on the path to self discovery.</p>
 
                 <div class="media">
                     <div class="media-left">
@@ -96,20 +88,10 @@ layout: default
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                        <p>Before anything else, we love people and believe given the right values, principles, practices and tools, anybody can be able to realise their full potential</p>
                     </div>
                 </div>
 
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
 
                 <div class="media">
                     <div class="media-left">
@@ -118,7 +100,7 @@ layout: default
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                        <p> We believe perfect practice makes permanent hence we encourage our one another to practice consistently in order to sharpen ourselves</p>
                     </div>
                 </div>
             </div>
@@ -130,13 +112,13 @@ layout: default
 </div>
 <!-- End About -->
 
-<!-- Start Treatments -->
-<div id="treatments" class="treatments">
+<!-- Start Focus -->
+<div id="treatment" class="treatments">
     <div class="container-fluid">
-        <h2 class="section-title">Treatments</h2>
+        <h2 class="section-title">Focus</h2>
 
         <div class="row">
-            {% for treatment in site.data.treatments %}
+            {% for treatment in site.data.Focus %}
                 <div class="col-sm-6 col-md-4">
                     <div class="icon-box">
                         <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
@@ -148,7 +130,7 @@ layout: default
         </div>
     </div>
 </div>
-<!-- End Treatments -->
+<!-- End Focus -->
 
 <!-- Start Our team -->
 <div id="team" class="team"> 
