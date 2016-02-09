@@ -9,7 +9,7 @@ logo_url: /img/sisonke_logo.png
 hero: 
     hero_img: hero.jpg
     hero_title: SisonkeRising
-    hero_description:  Jekyll theme for SisonkeRising
+    hero_description:  African Excellence. Global Leadership.
 
 # Contact form
 api_token: # Enter API token here
@@ -17,9 +17,9 @@ api_token: # Enter API token here
 # Contact info
 contact:
     phone: +27 78 019 0607
-    emergency: 931 53 234
+    twitterHandle: sisonkerising
     email: info@sisonkerising.co.za
-    address: 80 Champion Street, <br> Midrand - South Africa
+    address: 280 Champion Street, <br> Bridle Park, Midrand - South Africa
 
 # Opening hours
 monday_friday: 9:00 – 18:00
@@ -33,8 +33,8 @@ testimonials:
 # Map
 map:
     zoom: 17
-    address: Von schroeders 273, Viña del mar, Chile
-    address_details: svg/min/logo.svg
+    address: 280 Champion St, Midrand, 1684
+    address_details: img/sisonke_logo.png
 
 # Social settings
 facebook: http://facebook.com
