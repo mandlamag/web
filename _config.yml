@@ -3,6 +3,45 @@
 name: sisonkerising
 description: sisonkerising website
 url: mandlamag.github.io
+logo_url: svg/min/logo.svg
+
+# Hero
+hero: 
+    hero_img: hero.jpg
+    hero_title: SisonkeRising
+    hero_description:  Jekyll theme for SisonkeRising
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+contact:
+    phone: +27 78 019 0607
+    emergency: 931 53 234
+    email: info@sisonkerising.co.za
+    address: 80 Champion Street, <br> Midrand - South Africa
+
+# Opening hours
+monday_friday: 9:00 – 18:00
+saturday: 10:00 – 17:00
+sunday: 10:00 – 15:00
+
+# Testimonials
+testimonials:
+    testimonials_img: paralex.jpeg
+
+# Map
+map:
+    zoom: 17
+    address: Von schroeders 273, Viña del mar, Chile
+    address_details: svg/min/logo.svg
+
+# Social settings
+facebook: http://facebook.com
+twitter: http://twitter.com
+
+# Footer
+copyright: © 2016 SisonkeRising - All rights reserved
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
