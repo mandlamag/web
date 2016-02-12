@@ -1,34 +1,20 @@
-- name: Britta Perry
-  image: team.jpg
-  email: email@gmail.com
+- name: Kevin Trethewey 
+  image: kevin-n.jpg
+  email: kevint@drivenalliance.com
+  phone: 0780190607
+
+- name: Shanaaz Trethewey
+  image: shanaaz-n.jpg
+  email: shanaazt@drivenalliance.com
   phone: 9659 43 21
 
-- name: Troy Barnes 
-  image: team.jpg
-  email: email@gmail.com
+- name: Mandla Magagula
+  image: mandla-n.jpg
+  email: mandlam@drivenalliance.com
+  phone:  078 019 0607
+
+- name: Theo Bohnen
+  image: theo-n.jpg
+  email: theob@drivenalliance.com
   phone: 9659 43 21
 
-- name: Annie
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Jeff Winger
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Britta Perry
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Troy Barnes
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Annie
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
