@@ -127,8 +127,9 @@ layout: default
 <!-- Start Focus -->
 <div id="treatments" class="treatments">
     <div class="container-fluid">
-        <h2 class="section-title">Focus</h2>
+        <h2 class="section-title">Our Approach</h2>
 
+                        <p> We believe that true mastery is a journey not a destination. We inspire and mentor our students in their jounery to true mastery</p>
         <div class="row">
             {% for treatment in site.data.treatments %}
                 <div class="col-sm-6 col-md-4">
@@ -207,6 +208,26 @@ layout: default
 </div>
 <!-- End Gallery -->
 
+<!-- Start Partner with us -->
+<div id="partners" class="treatments">
+    <div class="container-fluid">
+        <h2 class="section-title">Partner with Us</h2>
+
+                        <p> We believe that true mastery is a journey not a destination. We inspire and mentor our students in their jounery to true mastery</p>
+        <div class="row">
+            {% for partner in site.data.partners %}
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <svg class="icon {{ partner.icon }}"><use xlink:href="#{{ partner.icon }}"></use></svg>
+                        <h4>{{ partner.title }}</h4>
+                        <p>{{ partner.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- End Focus -->
 <!-- Start Map -->
 <div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
 <!-- End Map -->
