@@ -5792,8 +5792,9 @@ button.close {
 
 /* Space
 -------------------------------*/
-.main-footer, .treatments, .about, .testimonials .overlay-container, .gallery, .team {
-  padding: 60px 0; }
+.main-footer, .treatments, .about, .testimonials .overlay-container, .gallery, .team, .get-involved {
+    padding: 60px 0;
+}
 
 /* Lists
 -------------------------------*/
